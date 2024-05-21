@@ -132,3 +132,20 @@ terraform plan
 # Apply the configuration
 terraform apply  --auto-approve
 ```
+
+### provisioners
+Provisioners are tools used in Terraform to execute scripts or commands on the resources it manages. They help automate tasks like installing software or configuring settings on newly created infrastructure.
+
+There are three types of provisioners
+
+1. `File provisioner`
+The file provisioner in Terraform is used to copy files or directories from the local filesystem to a remote machine after a resource has been created. This provisioner is commonly used to transfer configuration files, scripts, or other necessary files to set up and configure resources like EC2 instances or virtual machines.
+
+2. `Local-exec provisioner`
+Executes commands on the machine running Terraform, typically used for tasks like running shell scripts or local commands.
+
+3. `Remote-exec provisioner`
+Connects to the newly created resource via SSH or WinRM and executes commands remotely. This is useful for tasks like installing software or configuring settings on remote machines.
+   
+
+
