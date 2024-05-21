@@ -143,8 +143,9 @@ The file provisioner in Terraform is used to copy files or directories from the 
 
 2. `Local-exec provisioner`
 Executes commands on the machine running Terraform, typically used for tasks like running shell scripts or local commands.
+Typically used to store information of resource in local system
 
-3. `Remote-exec provisioner`
+4. `Remote-exec provisioner`
 Connects to the newly created resource via SSH or WinRM and executes commands remotely. This is useful for tasks like installing software or configuring settings on remote machines.
    
 
